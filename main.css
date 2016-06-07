@@ -109,3 +109,24 @@ hr {
   border-style: none none dotted; 
   margin: 0 10% 0 0;
 }
+
+a .salesforce-color {
+  text-decoration: none;
+}
+
+.salesforce-color:hover {
+  color: #28B7E5;
+  animation-name: bigify;
+  -webkit-animation-name: bigify;
+  animation-duration: 1;
+  -webkit-animation-name: 1;
+}
+
+@keyframes bigify {
+  from {font-size: .9em;}
+  to {font-size: 1.25em;}
+}
+@-webkit-keyframes bigify {
+  from {font-size: .9em;}
+  to {font-size: 1.25em;}
+}
