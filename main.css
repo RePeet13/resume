@@ -49,7 +49,8 @@ body {
   display: inline-block;
   font-size: .9em;
   letter-spacing: 1px;
-  margin-bottom: -1%;
+  margin-top: .25em;
+  margin-bottom: .25em;
   text-decoration: none;
 }
 
@@ -74,13 +75,18 @@ body {
 }
 
 .category-details {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+
   color: #808284;
   font-size: .9em;
   font-style: italic;
   line-height: 1.4em;
-  margin-bottom: 1%;
   margin-left: 2%;
-  margin-top: .5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
   /*margin-top: -1%;*/
 }
 
@@ -90,7 +96,7 @@ body {
   line-height: 1.4em;
   margin-bottom: 1%;
   margin-left: 2%;
-  margin-right: 7%;
+  margin-right: 12%;
   margin-top: 1em;
 }
 
@@ -98,9 +104,9 @@ body {
   color: #808284;
   font-size: .9em;
   line-height: 1.4em;
-  margin-bottom: 1%;
+  margin-bottom: .3%;
   margin-left: 2%;
-  margin-right: 7%;
+  margin-right: 10%;
   margin-top: .01em;
 }
 
@@ -110,23 +116,35 @@ hr {
   margin: 0 10% 0 0;
 }
 
-a .salesforce-color {
+.right-date {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+a /*.salesforce-color*/ {
   text-decoration: none;
+}
+
+ul {
+  color: #58585B;
+  padding-left: 3.5%;
+}
+li .category-description {
+  margin-left: .5%;
 }
 
 .salesforce-color:hover {
   color: #28B7E5;
-  animation-name: bigify;
-  -webkit-animation-name: bigify;
-  animation-duration: 1;
-  -webkit-animation-name: 1;
 }
 
-@keyframes bigify {
-  from {font-size: .9em;}
-  to {font-size: 1.25em;}
+.gatech-gold-color:hover {
+  color: #C59353;
 }
-@-webkit-keyframes bigify {
-  from {font-size: .9em;}
-  to {font-size: 1.25em;}
+
+.gatech-buzz-color:hover {
+  color: #EEB211;
+}
+
+.electrolux-color:hover {
+  color: #1A245F;
 }
